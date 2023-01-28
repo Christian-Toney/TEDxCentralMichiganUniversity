@@ -46,7 +46,7 @@ header img {
   width: 150px;
 }
 
-header img, header nav {
+header img, nav {
   display: flex;
 }
 
@@ -64,6 +64,10 @@ header ul a {
 main {
   margin: 50px auto;
   max-width: 1080px;
+}
+
+nav ul {
+  gap: 20px;
 }
 
 p {
