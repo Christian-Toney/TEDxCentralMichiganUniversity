@@ -24,7 +24,7 @@ export default function Organizers() {
         <h1>Design & Marketing Team</h1>
         <ul>
           <Organizer name="Ava Brewer" title="Head of Design & Marketing" />
-          <Organizer name="Christian Toney" title="Web Designer" />
+          <Organizer name="Christian Toney" title="Web Designer" imgSrc="/people/christian-toney-transparent.png" />
         </ul>
       </section>
       <section>

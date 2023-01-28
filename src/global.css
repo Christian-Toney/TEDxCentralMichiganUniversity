@@ -1,5 +1,6 @@
 :root {
-  --color-text: rgb(34, 34, 34);
+  --background: #f8f9fd;
+  --color-text: #222222;
 }
 
 #apply {
@@ -20,6 +21,7 @@ a {
 
 body {
   margin: 0;
+  background-color: var(--background);
 }
 
 body, button {
@@ -62,7 +64,7 @@ header ul a {
 }
 
 main {
-  margin: 50px auto;
+  margin: 50px 20px;
   max-width: 1080px;
 }
 
@@ -80,4 +82,16 @@ footer {
   padding: 20px;
   background-color: var(--color-text);
   color: rgb(233, 233, 233);
+}
+
+footer p {
+  text-align: center;
+}
+
+@media screen and (min-width: 1080px) {
+  
+  main {
+    margin: 50px auto;
+  }
+
 }

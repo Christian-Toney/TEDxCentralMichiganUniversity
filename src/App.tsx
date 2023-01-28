@@ -11,7 +11,7 @@ export default function App() {
     <>
       <header>
         <Link to="/">
-          <img src="/logo.jpg" />
+          <img src="/logo.png" />
         </Link>
         <nav>
           <ul>
