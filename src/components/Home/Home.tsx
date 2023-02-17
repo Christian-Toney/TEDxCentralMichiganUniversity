@@ -12,6 +12,6 @@ export default function Home() {
         <p>We also have <a href="/about#volunteer">volunteer opprotunities</a>.</p>
       </section>
     </main>
-  )
+  );
 
 }
