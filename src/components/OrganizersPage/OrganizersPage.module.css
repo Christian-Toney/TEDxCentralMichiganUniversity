@@ -18,7 +18,7 @@
   justify-content: center;
 }
 
-#main li {
+#main li a {
   background-color: white;
   width: 250px;
   display: flex;
@@ -28,26 +28,30 @@
   gap: 5px;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 9px 30px 0 rgba(35,39,42,.1);
   border-radius: 5px;
+  transition: 0.3s;
 }
 
-#main li > b {
+#main li:hover {
+  box-shadow: 0 9px 30px 0 rgba(35,39,42,.1);
+}
+
+#main li a > b {
   margin-top: 15px;
 }
 
-#main li > section {
+#main li a > section {
   width: 150px;
   height: 150px;
   /* background-color: var(--background); */
 }
 
-#main li > section > img {
+#main li a > section > img {
   height: 100%;
   width: 100%;
 }
 
-#main li > p {
+#main li a > p {
   margin: 0;
   text-align: center;
   color: #191919;
