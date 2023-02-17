@@ -34,6 +34,6 @@ export default function App() {
         <p>This independent TEDx event is operated under license from TED.</p>
       </footer>
     </>
-  )
+  );
 
 }

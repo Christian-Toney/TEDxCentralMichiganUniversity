@@ -34,6 +34,6 @@ export default function Organizers() {
         </ul>
       </section>
     </main>
-  )
+  );
 
 }

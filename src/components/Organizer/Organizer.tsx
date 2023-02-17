@@ -16,6 +16,6 @@ export default function Organizer({name, title, imgSrc}: {name: string, title?: 
         <p>{title ?? "Organizer"}</p>
       </a>
     </li>
-  )
+  );
 
 }
