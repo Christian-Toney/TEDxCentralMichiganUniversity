@@ -68,11 +68,6 @@ header ul a {
   color: var(--color-text);
 }
 
-main {
-  margin: 50px 20px;
-  max-width: 1080px;
-}
-
 nav ul {
   gap: 20px;
 }
