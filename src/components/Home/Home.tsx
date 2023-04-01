@@ -118,9 +118,10 @@ export default function Home() {
     <main>
       {person ? <Profile person={person} onClose={() => setPerson(null)} /> : null}
       <section id={styles.title}>
-        <p>TEDxCentralMichiganUniversity Presents</p>
+        <p>TEDxCentral Michigan University Presents</p>
         <h1>The essense of a changing world</h1>
       </section>
+      <p>April 29, 2023 • 1:30 PM - 4:00 PM • French Auditorium, 1200 S. Franklin St. Mt Pleasant, Michigan, 48858</p>
       <section id={styles.instruction}>
         <section>
           <p>We're out of tickets this semester, but don't fret: you can watch the stream when we're live!</p>
