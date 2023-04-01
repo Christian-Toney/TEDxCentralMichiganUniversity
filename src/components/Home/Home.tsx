@@ -1,15 +1,172 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import styles from "./Home.module.css";
+import Profile from "../Profile/Profile";
+
+export interface Person {name: string; title: string; bio: React.ReactElement; src: string;}
 
 export default function Home() {
 
+  const goalDate = new Date(1682789400000);
+  const [currentDate, setCurrentDate] = useState<Date>(new Date());
+  useEffect(() => {
+
+    setTimeout(() => setCurrentDate(new Date), 1000);
+
+  }, [currentDate]);
+
+  function addZeroIfNecessary(number: number) {
+    
+    return `${number < 10 ? "0" : ""}${number}`;
+
+  }
+
+  let timeDifference = (goalDate.getTime() - currentDate.getTime()) / 1000;
+  const dayDifference = Math.floor(timeDifference / 86400);
+  timeDifference -= dayDifference * 86400;
+  const hourDifference = Math.floor(timeDifference / 3600) % 24;
+  timeDifference -= hourDifference * 3600;
+  const minuteDifference = Math.floor(timeDifference / 60) % 60;
+  timeDifference -= minuteDifference * 60;
+  const secondDifference = Math.floor(timeDifference % 60);
+
+  const [person, setPerson] = useState<Person | null>(null);
+  const people = [
+    {
+      name: "Anyah Lewis",
+      title: "Student",
+      src: "/people/Anyah.jpg",
+      bio: (
+        <>
+          <p>
+            Anyah Lewis is a graduating senior from Central Michigan University. Majoring in Sociology with a concentration in Youth Studies, and minor in Family Studies; Anyah's involvements include, but are not limited to President of Zeta Phi Beta Sorority, Incorporated, Sigma Kappa Chapter; Ronald E. McNair Scholars Program with published research; and is a student mentor for the Mentor Collective program.
+          </p>
+          <p>
+            Anyah has a passion for community enrichment and is always looking for opportunities to give back. With an affinity toward youth development, Anyah endeavors to live a life of advocacy specifically for minority students. Lewis seeks to find innovative ways to implement resources and tools for young adolescents who've experienced trauma to heal and progress through life.
+          </p>
+        </>
+      )
+    },
+    {
+      name: "Johnathan Glenn",
+      title: "Director of Diversity & Inclusion",
+      src: "/people/Glenn.jpg",
+      bio: (
+        <>
+          <p>
+            Jonathan Glenn is the Director of Diversity & Inclusion/Deputy Title IX Coordinator at Alma College. Prior to joining Alma College, Glenn worked as the Associate Athletic Director with CMU Athletics. In this position he worked with leadership development, student conduct, Title IX, care team reporting, DEI director, and sports administrator for Women's Basketball, Women's Lacrosse, and Wrestling. Glenn also serves as the CMU Football’s team Chaplain.
+          </p>
+          <p>
+            Glenn also worked as an Assistant Director for the Leadership Institute at CMU after working as an Assistant Director in the Multicultural Academic Student Services office. Over the last seven years at Central Michigan University, Glenn has provided trainings on leadership, mentorship, multiculturalism, diversity, equity, and inclusion for several on and off campus organizations. Jonathan has presented for: St. Louis Public Schools, Gratiot County Public Schools, Omega Psi Phi, Florida Gulf Coast University, University of Nevada (Reno), Mid-American Conference, Resurrection Life Church, CMU Athletics, Aludyne Manufacturer, and several local leadership conferences.
+          </p>
+          <p>
+            As of April 3, 2023, Mr. Glenn transitioned to Dr. Glenn after successfully defending his doctoral dissertation from CMU. Dr. Glenn officially graduates with his Doctor of Education on May 5, 2023... his 3rd degree from CMU.
+          </p>
+        </>
+      )
+    },
+    {
+      name: "Jada Thrash",
+      title: "Student",
+      src: "/people/Jada.jpg",
+      bio: (
+        <p>
+          Jada Thrash is currently a junior at CMU as an Outdoor and Environmental Recreation and Education Major with Minors in Leadership and Communications. She is also a Leader Advancement Scholar passionate about using her voice for positive change in her community and inspiring others to do the same. Growing up in the suburbs of Washington, DC, Atlanta, and Philadelphia before moving to Kalamazoo a decade ago, she found her voice as part of over 40 plays, musicals, TV appearances, movies, speaking competitions, and public speeches. At CMU, she is a member of the Alpha Gamma Delta sorority, a social media coordinator for the Leadership Institute, a campus ambassador, a Collegiate Panhellenic Council Greek Week Representative, and a facilitator for various Leadership conferences and events around campus.
+        </p>
+      )
+    },
+    {
+      name: "Jessica Hetzel",
+      title: "Student",
+      src: "/people/Jessica.jpg",
+      bio: (
+        <p>
+          Jessica Hetzel is a student at Central Michigan University, currently pursuing a degree in disability studies and public relations. She has demonstrated her leadership skills by serving as the Director of Diversity, Equity, and Inclusion for the Collegiate Panhellenic Council. Her dedication and passion for disability rights and community inclusion have been evident throughout her academic career. Jessica is committed to making a positive impact in these areas, and she plans to continue her work in creating more inclusive and welcoming communities.
+        </p>
+      )
+    },
+    {
+      name: "Joseph Marah",
+      title: "Student",
+      src: "/people/Joseph.jpg",
+      bio: (
+        <>
+          <p>
+            Joseph Marah is the President and found of the Joseph Marah Arnold Foundation, a nonprofit in Sierra Leone, West Africa. He is currently a student at Central Michigan University pursuing degrees in Economics and Political Science with minors in Entrepreneurship and Public Administration.
+          </p>
+          <p>
+            Joseph is actively involved in student leadership on campus, serving as the Student Government representative for the International Student Organization and Vice President of the Northwest Community Council. Mr. Marah enjoys cultural exchange and was previously a Kennedy-Lugar Youth Exchange Student.
+          </p>
+          <p>
+            During his exchange year, Mr. Marah was involved in leadership and interfaith conferences in Istanbul, Turkey and Baltimore, Maryland. These conferences greatly widened his passions for cultural exchange and leadership.
+          </p>
+        </>
+      )
+    },
+    {
+      name: "Tiffany Jurge",
+      title: "Student",
+      src: "/people/Tiffany.jpg",
+      bio: (
+        <p>
+          Tiffany Jurge is a sophomore in CMU's Honors Program. She is currently pursuing a double major in Political Science and Environmental Studies with a minor in Spanish. She would like to pursue a career in environmental law or international policy. Tiffany hopes to follow her life-long goal of being an active citizen by advocating for those in need and exploring the complex nature of systemic issues.
+        </p>
+      )
+    }
+  ];
+
   return (
     <main>
-      <section id="apply">
-        <h1>Wanna give it a go?</h1>
-        <section onClick={() => window.open("https://forms.microsoft.com/r/mmezsbdyBx")}>
-          <button>Apply to become a speaker</button>
+      {person ? <Profile person={person} onClose={() => setPerson(null)} /> : null}
+      <section id={styles.title}>
+        <p>TEDxCentral Michigan University Presents</p>
+        <h1>The essense of a changing world</h1>
+      </section>
+      <p>April 29, 2023 • 1:30 PM - 4:00 PM • French Auditorium, 1200 S. Franklin St. Mt Pleasant, Michigan, 48858</p>
+      <section id={styles.instruction}>
+        <section>
+          <p>We're out of tickets this semester, but don't fret: you can watch the stream when we're live!</p>
+          <section id={styles.player}>
+            {addZeroIfNecessary(dayDifference)}:{addZeroIfNecessary(hourDifference)}:{addZeroIfNecessary(minuteDifference)}:{addZeroIfNecessary(secondDifference)}
+            <p>until it happens!</p>
+          </section>
         </section>
-        <p>We also have <a href="/about#volunteer">volunteer opprotunities</a>.</p>
+      </section>
+      <section id={styles.speakers}>
+        <section>
+          <p>Featuring a range of perspectives from students and professionals</p>
+        </section>
+        <ul>
+          <li>
+            <button onClick={() => setPerson(people[0])}>
+              <img src="/people/Anyah.jpg" />
+            </button>
+          </li>
+          <li>
+            <button onClick={() => setPerson(people[1])}>
+              <img src="/people/Glenn.jpg" style={{objectPosition: "0px -34px"}} />
+            </button>
+          </li>
+          <li>
+            <button onClick={() => setPerson(people[2])}>
+              <img src="/people/Jada.jpg" />
+            </button>
+          </li>
+          <li>
+            <button onClick={() => setPerson(people[3])}>
+              <img src="/people/Jessica.jpg" style={{objectPosition: "-14px"}} />
+            </button>
+          </li>
+          <li>
+            <button onClick={() => setPerson(people[4])}>
+              <img src="/people/Joseph.jpg" style={{objectPosition: "-44px"}} />
+            </button>
+          </li>
+          <li>
+            <button onClick={() => setPerson(people[5])}>
+              <img src="/people/Tiffany.jpg" style={{objectPosition: "-51px"}} />
+            </button>
+          </li>
+        </ul>
       </section>
     </main>
   );
