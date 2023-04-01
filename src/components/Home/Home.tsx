@@ -63,6 +63,54 @@ export default function Home() {
           </p>
         </>
       )
+    },
+    {
+      name: "Jada Thrash",
+      title: "Student",
+      src: "/people/Jada.jpg",
+      bio: (
+        <p>
+          Jada Thrash is currently a junior at CMU as an Outdoor and Environmental Recreation and Education Major with Minors in Leadership and Communications. She is also a Leader Advancement Scholar passionate about using her voice for positive change in her community and inspiring others to do the same. Growing up in the suburbs of Washington, DC, Atlanta, and Philadelphia before moving to Kalamazoo a decade ago, she found her voice as part of over 40 plays, musicals, TV appearances, movies, speaking competitions, and public speeches. At CMU, she is a member of the Alpha Gamma Delta sorority, a social media coordinator for the Leadership Institute, a campus ambassador, a Collegiate Panhellenic Council Greek Week Representative, and a facilitator for various Leadership conferences and events around campus.
+        </p>
+      )
+    },
+    {
+      name: "Jessica Hetzel",
+      title: "Student",
+      src: "/people/Jessica.jpg",
+      bio: (
+        <p>
+          Jessica Hetzel is a student at Central Michigan University, currently pursuing a degree in disability studies and public relations. She has demonstrated her leadership skills by serving as the Director of Diversity, Equity, and Inclusion for the Collegiate Panhellenic Council. Her dedication and passion for disability rights and community inclusion have been evident throughout her academic career. Jessica is committed to making a positive impact in these areas, and she plans to continue her work in creating more inclusive and welcoming communities.
+        </p>
+      )
+    },
+    {
+      name: "Joseph Marah",
+      title: "Student",
+      src: "/people/Joseph.jpg",
+      bio: (
+        <>
+          <p>
+            Joseph Marah is the President and found of the Joseph Marah Arnold Foundation, a nonprofit in Sierra Leone, West Africa. He is currently a student at Central Michigan University pursuing degrees in Economics and Political Science with minors in Entrepreneurship and Public Administration.
+          </p>
+          <p>
+            Joseph is actively involved in student leadership on campus, serving as the Student Government representative for the International Student Organization and Vice President of the Northwest Community Council. Mr. Marah enjoys cultural exchange and was previously a Kennedy-Lugar Youth Exchange Student.
+          </p>
+          <p>
+            During his exchange year, Mr. Marah was involved in leadership and interfaith conferences in Istanbul, Turkey and Baltimore, Maryland. These conferences greatly widened his passions for cultural exchange and leadership.
+          </p>
+        </>
+      )
+    },
+    {
+      name: "Tiffany Jurge",
+      title: "Student",
+      src: "/people/Tiffany.jpg",
+      bio: (
+        <p>
+          Tiffany Jurge is a sophomore in CMU's Honors Program. She is currently pursuing a double major in Political Science and Environmental Studies with a minor in Spanish. She would like to pursue a career in environmental law or international policy. Tiffany hopes to follow her life-long goal of being an active citizen by advocating for those in need and exploring the complex nature of systemic issues.
+        </p>
+      )
     }
   ];
 
@@ -99,7 +147,7 @@ export default function Home() {
           </li>
           <li>
             <button onClick={() => setPerson(people[2])}>
-              <img src="/people/Jana.jpg" />
+              <img src="/people/Jada.jpg" />
             </button>
           </li>
           <li>
