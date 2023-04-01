@@ -6,37 +6,49 @@ export default function Home() {
   return (
     <main>
       <section id={styles.title}>
+        <p>The Central Michigan University Student Government Association presents</p>
         <h1>The essense of a changing world</h1>
-        <p>Enter a sub-description here.</p>
       </section>
-      <section>
+      <section id={styles.speakers}>
         <section>
-          <h1>Speakers</h1>
-          <p>From students to professionals, there </p>
+          <p>Enjoy diverse and engaged perspectives from students and professionals.</p>
         </section>
         <ul>
           <li>
-            <img src="/people/Anyah.jpg" />
+            <button>
+              <img src="/people/Anyah.jpg" />
+            </button>
           </li>
           <li>
-            <img src="/people/Glenn.jpg" />
+            <button>
+              <img src="/people/Glenn.jpg" />
+            </button>
           </li>
           <li>
-            <img src="/people/Jana.jpg" />
+            <button>
+              <img src="/people/Jana.jpg" />
+            </button>
           </li>
           <li>
-            <img src="/people/Joseph.jpg" />
+            <button>
+              <img src="/people/Jessica.jpg" />
+            </button>
           </li>
           <li>
-            <img src="/people/Joseph.jpg" />
+            <button>
+              <img src="/people/Joseph.jpg" />
+            </button>
           </li>
           <li>
-            <img src="/people/Tiffany.jpg" />
+            <button>
+              <img src="/people/Tiffany.jpg" />
+            </button>
           </li>
         </ul>
       </section>
       <section>
-
+        <p>Join us in <b>French Auditorium</b> on April 29, 2023</p>
+        <button onClick={() => window.open("https://goo.gl/maps/voGMddKF58xVjPAu8", "_blank")}>Get directions</button>
       </section>
     </main>
   );
