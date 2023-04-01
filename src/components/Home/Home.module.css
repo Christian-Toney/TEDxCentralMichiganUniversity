@@ -60,6 +60,20 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 5px;
+}
+
+#instruction {
+  background-color: var(--color-text);
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#instruction p {
+  margin: 0;
 }
 
 @media screen and (min-width: 430px) {

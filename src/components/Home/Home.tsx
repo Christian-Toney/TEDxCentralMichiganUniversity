@@ -9,9 +9,15 @@ export default function Home() {
         <p>The Central Michigan University Student Government Association presents</p>
         <h1>The essense of a changing world</h1>
       </section>
+      <section id={styles.instruction}>
+        <p>We're out of tickets this semester, but don't fret: you can watch the stream when we're live!</p>
+        <section>
+          <button disabled>Watch the livestream</button>
+        </section>
+      </section>
       <section id={styles.speakers}>
         <section>
-          <p>Enjoy diverse and engaged perspectives from students and professionals.</p>
+          <p>Featuring a range of perspectives from students and professionals</p>
         </section>
         <ul>
           <li>
@@ -47,8 +53,7 @@ export default function Home() {
         </ul>
       </section>
       <section>
-        <p>Join us in <b>French Auditorium</b> on April 29, 2023</p>
-        <button onClick={() => window.open("https://goo.gl/maps/voGMddKF58xVjPAu8", "_blank")}>Get directions</button>
+        <p>We're live in the French Auditorium on </p>
       </section>
     </main>
   );
