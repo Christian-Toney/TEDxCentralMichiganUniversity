@@ -96,6 +96,10 @@ footer {
   margin-top: 20px;
 }
 
+footer a {
+  font-weight: normal;
+}
+
 footer p {
   text-align: center;
   margin: 0;

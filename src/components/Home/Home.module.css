@@ -66,14 +66,41 @@
 #instruction {
   background-color: var(--color-text);
   color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#instruction > section {
   padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: center;
+  max-width: 1120px;
+  justify-content: center;
+}
+
+#instruction > section > p {
+  text-align: center;
+  font-size: 18px;
+  max-width: 395px;
 }
 
 #instruction p {
   margin: 0;
+}
+
+#player {
+  width: 350px;
+  background-color: black;
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+  height: 200px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 430px) {
@@ -105,6 +132,11 @@
 
   #speakers ul {
     height: 100%;
+  }
+
+  #instruction > section {
+    flex-direction: row;
+    gap: 110px;
   }
 
 }
