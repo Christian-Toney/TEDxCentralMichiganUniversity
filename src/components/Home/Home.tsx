@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import Profile from "../Profile/Profile";
+import anyah from "../../people/Anyah.jpg";
+import glenn from "../../people/Glenn.jpg";
+import jada from "../../people/Jada.jpg";
+import jessica from "../../people/Jessica.jpg";
+import joseph from "../../people/Joseph.jpg";
+import tiffany from "../../people/Tiffany.jpg";
+import shawna from "../../people/Shawna.jpeg";
 
 export interface Person {name: string; title: string; bio: React.ReactElement; src: string;}
 
@@ -34,7 +41,7 @@ export default function Home() {
     {
       name: "Anyah Lewis",
       title: "Student",
-      src: "/people/Anyah.jpg",
+      src: anyah,
       bio: (
         <>
           <p>
@@ -49,7 +56,7 @@ export default function Home() {
     {
       name: "Johnathan Glenn",
       title: "Director of Diversity & Inclusion",
-      src: "/people/Glenn.jpg",
+      src: glenn,
       bio: (
         <>
           <p>
@@ -67,7 +74,7 @@ export default function Home() {
     {
       name: "Jada Thrash",
       title: "Student",
-      src: "/people/Jada.jpg",
+      src: jada,
       bio: (
         <p>
           Jada Thrash is currently a junior at CMU as an Outdoor and Environmental Recreation and Education Major with Minors in Leadership and Communications. She is also a Leader Advancement Scholar passionate about using her voice for positive change in her community and inspiring others to do the same. Growing up in the suburbs of Washington, DC, Atlanta, and Philadelphia before moving to Kalamazoo a decade ago, she found her voice as part of over 40 plays, musicals, TV appearances, movies, speaking competitions, and public speeches. At CMU, she is a member of the Alpha Gamma Delta sorority, a social media coordinator for the Leadership Institute, a campus ambassador, a Collegiate Panhellenic Council Greek Week Representative, and a facilitator for various Leadership conferences and events around campus.
@@ -77,7 +84,7 @@ export default function Home() {
     {
       name: "Jessica Hetzel",
       title: "Student",
-      src: "/people/Jessica.jpg",
+      src: jessica,
       bio: (
         <p>
           Jessica Hetzel is a student at Central Michigan University, currently pursuing a degree in disability studies and public relations. She has demonstrated her leadership skills by serving as the Director of Diversity, Equity, and Inclusion for the Collegiate Panhellenic Council. Her dedication and passion for disability rights and community inclusion have been evident throughout her academic career. Jessica is committed to making a positive impact in these areas, and she plans to continue her work in creating more inclusive and welcoming communities.
@@ -87,7 +94,7 @@ export default function Home() {
     {
       name: "Joseph Marah",
       title: "Student",
-      src: "/people/Joseph.jpg",
+      src: joseph,
       bio: (
         <>
           <p>
@@ -105,7 +112,7 @@ export default function Home() {
     {
       name: "Tiffany Jurge",
       title: "Student",
-      src: "/people/Tiffany.jpg",
+      src: tiffany,
       bio: (
         <p>
           Tiffany Jurge is a sophomore in CMU's Honors Program. She is currently pursuing a double major in Political Science and Environmental Studies with a minor in Spanish. She would like to pursue a career in environmental law or international policy. Tiffany hopes to follow her life-long goal of being an active citizen by advocating for those in need and exploring the complex nature of systemic issues.
@@ -115,7 +122,7 @@ export default function Home() {
     {
       name: "Dr. Shawna Patterson-Stephens",
       title: "Vice President and Chief Diversity Officer",
-      src: "/people/Shawna.jpeg",
+      src: shawna,
       bio: (
         <>
           <p>

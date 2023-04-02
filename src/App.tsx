@@ -4,6 +4,7 @@ import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import OrganizersPage from "./components/OrganizersPage/OrganizersPage";
 import "./global.css";
+import logo from "./logo.png";
 
 export default function App() {
 
@@ -11,7 +12,7 @@ export default function App() {
     <>
       <header>
         <Link to="/">
-          <img src="/logo.png" />
+          <img src={logo} />
         </Link>
         <nav>
           <ul>
