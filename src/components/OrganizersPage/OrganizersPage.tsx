@@ -12,6 +12,8 @@ export default function Organizers() {
           <Organizer name="Tyler Thompson" imgSrc="/people/Tyler.jpg" offsetY={20} scale={1.4} />
           <Organizer name="Mitchell Basham" imgSrc="/people/Mitchell.png" />
           <Organizer name="Natalie Brant" />
+        </ul>
+        <ul>
           <Organizer name="Ameer Hicks" title="Head of Speaker Curation" imgSrc="/people/Ameer.jpg" offsetY={-20} />
           <Organizer name="Ava Brewer" title="Head of Design & Marketing" imgSrc="/people/Ava.jpg" />
           <Organizer name="Christian Toney" title="Organizer and Head of Technology" imgSrc="/people/Christian.jpg" offsetY={-50} />

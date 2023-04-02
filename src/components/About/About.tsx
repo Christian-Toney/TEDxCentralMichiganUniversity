@@ -1,15 +1,11 @@
 import React from "react";
 import AboutSection from "../AboutSection/AboutSection";
+import styles from "./About.module.css";
 
 export default function About() {
 
   return (
-    <main>
-      <AboutSection heading="About TEDx, x = independently organized event">
-        <p>
-          In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
-        </p>
-      </AboutSection>
+    <main id={styles.about}>
       <AboutSection heading="About TED">
         <p>
           TED is a nonprofit organization devoted to Ideas Worth Spreading, often in the form of short talks delivered by leading thinkers and doers. Many of these talks are given at TED Conferences, intimate TED Salons and thousands of independently organised TEDx events around the world. Videos of these talks are made available, free, on <a href="https://ted.com">TED.com</a> and other platforms. Audio versions of TED Talks are published to <a href="https://applepodcasts.com/tedtalksdaily">TED Talks Daily</a>, available on all podcast platforms.
@@ -20,8 +16,13 @@ export default function About() {
         <p>
           Follow TED on <a href="http://twitter.com/TEDTalks">Twitter</a>, <a href="http://www.facebook.com/TED">Facebook</a>, <a href="https://instagram.com/ted">Instagram</a> and on <a href="https://www.linkedin.com/company/ted-conferences">LinkedIn</a>.
         </p>
-      </AboutSection> 
+      </AboutSection>
+      <AboutSection heading="About TEDx, x = independently organized event">
+        <p>
+          In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
+        </p>
+      </AboutSection>
     </main>
-  )
+  );
 
 }
