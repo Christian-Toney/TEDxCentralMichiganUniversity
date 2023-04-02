@@ -16,7 +16,7 @@ export default function Organizers() {
       <section>
         <h1>TEDxCentral Michigan University Team</h1>
         <ul>
-          <Organizer name="Tyler Thompson" imgSrc={tyler} offsetY={20} scale={1.4} />
+          <Organizer name="Tyler Thompson" title="Lead Organizer" imgSrc={tyler} offsetY={20} scale={1.4} />
           <Organizer name="Mitchell Basham" imgSrc={mitchell} />
           <Organizer name="Natalie Brant" />
         </ul>
@@ -33,7 +33,7 @@ export default function Organizers() {
       </section>
       <section>
         <h1>Special Thanks</h1>
-        <ul style={{}}>
+        <ul>
           <li style={{width: "auto"}}>Central Michigan University Student Government Association • Central Michigan University University Events</li>
         </ul>
       </section>
