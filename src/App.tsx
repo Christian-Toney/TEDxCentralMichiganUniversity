@@ -51,12 +51,6 @@ export default function App() {
             <h1>Community</h1>
             <ul>
               <li>
-                <a href="#">Tickets</a>
-              </li>
-              <li>
-                <a href="#">Livestream</a>
-              </li>
-              <li>
                 <a href="https://instagram.com/TEDxCentralMichiganUniversity" target="_blank" rel="noreferrer">Instagram</a>
               </li>
               <li>
