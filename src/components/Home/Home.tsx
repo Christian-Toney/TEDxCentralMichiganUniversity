@@ -111,6 +111,27 @@ export default function Home() {
           Tiffany Jurge is a sophomore in CMU's Honors Program. She is currently pursuing a double major in Political Science and Environmental Studies with a minor in Spanish. She would like to pursue a career in environmental law or international policy. Tiffany hopes to follow her life-long goal of being an active citizen by advocating for those in need and exploring the complex nature of systemic issues.
         </p>
       )
+    },
+    {
+      name: "Dr. Shawna Patterson-Stephens",
+      title: "Vice President and Chief Diversity Officer",
+      src: "/people/Shawna.jpeg",
+      bio: (
+        <>
+          <p>
+            Dr. Shawna Patterson-Stephens serves as Vice President and Chief Diversity Officer at Central Michigan University where she offers leadership within the Office for Institutional Diversity, Equity, and Inclusion.
+          </p>
+          <p>
+            She earned her Ph.D. from Florida State University while studying higher education, earned her Master's in Student Affairs Administration from Michigan State University, and graduated from CMU with her Bachelor's while majoring in Sociology. She returns to CMU after most recently serving as the Associate Vice Chancellor of Student Affairs and the Director of the Office of Inclusion and Intercultural Relations at the University of Illinois at Urbana-Champaign.
+          </p>
+          <p>
+            Dr. Patterson-Stephens dedicated her career to studying and creating more equitable systems for people from all avenues of life. She works toward creating an environment, both on campus and in the surrounding community, with the aim of ensuring everyone achieves their true potential. Shawna is an active member of Alpha Kappa Alpha Sorority, Incorporated, the Links, Incorporated, the NAACP, and the National Council for Negro Women, & Jack & Jill of America.
+          </p>
+          <p>
+            In her spare time, Shawna makes space to practice yoga, paint, sew, crochet, and enhance her photography skills. She's an avid traveler and hopes to visit several continents in the near future. Dr. Patterson-Stephens is also a podcast co-host and is currently writing a fictional novel.
+          </p>
+        </>
+      )
     }
   ];
 
@@ -138,32 +159,37 @@ export default function Home() {
         <ul>
           <li>
             <button onClick={() => setPerson(people[0])}>
-              <img src="/people/Anyah.jpg" />
+              <img src={people[0].src} />
             </button>
           </li>
           <li>
             <button onClick={() => setPerson(people[1])}>
-              <img src="/people/Glenn.jpg" style={{objectPosition: "0px -34px"}} />
+              <img src={people[1].src} style={{objectPosition: "0px -34px"}} />
             </button>
           </li>
           <li>
             <button onClick={() => setPerson(people[2])}>
-              <img src="/people/Jada.jpg" />
+              <img src={people[2].src} />
             </button>
           </li>
           <li>
             <button onClick={() => setPerson(people[3])}>
-              <img src="/people/Jessica.jpg" style={{objectPosition: "-14px"}} />
+              <img src={people[3].src} style={{objectPosition: "-14px"}} />
             </button>
           </li>
           <li>
             <button onClick={() => setPerson(people[4])}>
-              <img src="/people/Joseph.jpg" style={{objectPosition: "-44px"}} />
+              <img src={people[4].src} style={{objectPosition: "-44px"}} />
             </button>
           </li>
           <li>
             <button onClick={() => setPerson(people[5])}>
-              <img src="/people/Tiffany.jpg" style={{objectPosition: "-51px"}} />
+              <img src={people[5].src} style={{objectPosition: "-51px"}} />
+            </button>
+          </li>
+          <li>
+            <button onClick={() => setPerson(people[6])}>
+              <img src={people[6].src} />
             </button>
           </li>
         </ul>
