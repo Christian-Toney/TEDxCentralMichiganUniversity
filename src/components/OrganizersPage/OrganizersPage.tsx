@@ -14,12 +14,12 @@ export default function Organizers() {
           <Organizer name="Natalie Brant" />
           <Organizer name="Ameer Hicks" title="Head of Speaker Curation" imgSrc="/people/Ameer.jpg" offsetY={-20} />
           <Organizer name="Ava Brewer" title="Head of Design & Marketing" imgSrc="/people/Ava.jpg" />
-          <Organizer name="Christian Toney" title="Organizer and Head of Technology" />
+          <Organizer name="Christian Toney" title="Organizer and Head of Technology" imgSrc="/people/Christian.jpg" offsetY={-50} />
+          <Organizer name="Gabby Mifsud" title="Head of Partnerships & Sponsorships" />
           <Organizer name="Christian Mueller" title="Social Media Manager" />
           <Organizer name="Lauren Hull" title="Marketing Staff" imgSrc="/people/Lauren.jpg" offsetY={-128} />
           <Organizer name="Carolina Hernandez-Ruiz" title="Marketing Staff" imgSrc="/people/Carolina.jpeg" offsetY={-115} />
           <Organizer name="Brooke Gordon" title="Marketing Staff" />
-          <Organizer name="Gabby Mifsud" title="Head of Partnerships & Sponsorships" />
         </ul>
       </section>
       <section>

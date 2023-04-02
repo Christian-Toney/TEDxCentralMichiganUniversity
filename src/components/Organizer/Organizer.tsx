@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Organizer({name, title, imgSrc, offsetX = 0, offsetY = 0, scale = 1}: {name: string, title?: string, imgSrc?: string, offsetX?: number, offsetY?: number, scale?: number}) {
+export default function Organizer({name, title, imgSrc, offsetX = 0, offsetY = 0, scale = 1.01}: {name: string, title?: string, imgSrc?: string, offsetX?: number, offsetY?: number, scale?: number}) {
 
   return (
     <li>

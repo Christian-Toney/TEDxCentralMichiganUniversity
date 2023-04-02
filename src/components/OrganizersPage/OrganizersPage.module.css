@@ -19,7 +19,7 @@
 }
 
 #main li {
-  width: 300px;
+  width: 275px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -52,6 +52,5 @@
 
 #main li > p {
   margin: 0;
-  text-align: center;
   color: #191919;
 }
