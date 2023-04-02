@@ -27,6 +27,7 @@ export default function Organizers() {
       <section>
         <h1>Special Thanks</h1>
         <ul>
+          <li style={{width: "auto"}}>Central Michigan University Student Government Association</li>
           <li style={{width: "auto"}}>Central Michigan University University Events</li>
         </ul>
       </section>
