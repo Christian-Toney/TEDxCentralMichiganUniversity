@@ -11,6 +11,7 @@ import lauren from "../../people/Lauren.jpg";
 import carolina from "../../people/Carolina.jpeg";
 import brooke from "../../people/Brooke.jpg";
 import rhiannon from "../../people/Rhiannon.jpg";
+import natalie from "../../people/Natalie.jpg";
 
 export default function Organizers() {
 
@@ -19,9 +20,9 @@ export default function Organizers() {
       <section>
         <h1>TEDxCentral Michigan University Team</h1>
         <ul>
-          <Organizer name="Tyler Thompson" title="Lead Organizer" imgSrc={tyler} offsetY={20} scale={1.4} />
+          <Organizer name="Tyler Thompson" title="Lead Organizer" imgSrc={tyler} offsetY={10} scale={1.4} />
           <Organizer name="Mitchell Basham" imgSrc={mitchell} />
-          <Organizer name="Natalie Brant" />
+          <Organizer name="Natalie Brant" imgSrc={natalie} />
           <Organizer name="Ameer Hicks" title="Head of Speaker Curation" imgSrc={ameer} offsetY={-20} />
           <Organizer name="Ava Brewer" title="Head of Design & Marketing" imgSrc={ava} />
           <Organizer name="Christian Toney" title="Organizer and Head of Technology" imgSrc={christianT} offsetY={-50} />
