@@ -161,6 +161,28 @@ footer ul {
   flex-direction: column;
   gap: 0;
   right: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  overflow: hidden;
+}
+
+#about ul li {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+#about ul li a {
+  padding: 5px 15px;
+  height: 100%;
+  background-color: var(--background);
+  transition: 0.05s;
+}
+
+#about ul li a:hover {
+  background-color: #dbdbdb;
 }
 
 @media screen and (min-width: 1080px) {
