@@ -17,6 +17,9 @@ export default function App() {
         <nav>
           <ul>
             <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
               <Link to="/about">About TED</Link>
             </li>
             <li>
