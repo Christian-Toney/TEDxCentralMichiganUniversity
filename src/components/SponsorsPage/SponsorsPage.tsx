@@ -7,11 +7,12 @@ import einstein from "../../sponsors/einstein_logo.13c66612.png";
 import sga from "../../sponsors/20210706_OfficeofSAI_StudentGovernmentLogo_001f86bb8ca-b6bd-4fb1-850b-88275f541424.png";
 import cse from "../../sponsors/CSE_ActionC_Lockup_Horz_MaroonGold6c162d1b-cede-4f5e-b15d-985f0609fa0d.png";
 import ehs from "../../sponsors/College-Lockups-for-Web_EHS0728919f-ef33-44f2-9815-580b18dd0cfe.svg";
+import styles from "./SponsorsPage.module.css";
 
 export default function SponsorsPage() {
 
   return (
-    <main>
+    <main id={styles.main}>
       <h1></h1>
       <ul>
         <li>
@@ -44,7 +45,7 @@ export default function SponsorsPage() {
           </section>
         </li>
       </ul>
-      <ul>
+      <ul id={styles.noNames}>
         <li>
           <img src={einstein} />
         </li>

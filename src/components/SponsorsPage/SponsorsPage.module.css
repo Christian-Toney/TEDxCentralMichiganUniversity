@@ -1,0 +1,22 @@
+#main img {
+  max-height: 64px;
+  object-fit: contain;
+  max-width: 149px;
+}
+
+#main ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#noNames {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+#noNames li {
+  display: flex;
+  justify-content: center;
+}
