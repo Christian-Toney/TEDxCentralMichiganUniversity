@@ -26,12 +26,8 @@
   max-width: 300px;
 }
 
-#noNames {
+#noNames, #noNames li {
   display: flex;
-  justify-content: center;
-}
-
-#noNames li {
   justify-content: center;
 }
 
