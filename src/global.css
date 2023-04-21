@@ -172,6 +172,7 @@ footer ul {
   justify-content: center;
   box-sizing: border-box;
   align-items: center;
+  width: 100%;
 }
 
 #about ul li a {
@@ -179,6 +180,8 @@ footer ul {
   height: 100%;
   background-color: var(--background);
   transition: 0.05s;
+  text-align: center;
+  width: 100%;
 }
 
 #about ul li a:hover {

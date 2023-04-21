@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import OrganizersPage from "./components/OrganizersPage/OrganizersPage";
 import "./global.css";
 import logo from "./logo.png";
+import SponsorsPage from "./components/SponsorsPage/SponsorsPage";
 
 export default function App() {
 
@@ -56,6 +57,9 @@ export default function App() {
                     <li>
                       <Link to="/organizers">Organizers</Link>
                     </li>
+                    <li>
+                      <Link to="/sponsors">Sponsors</Link>
+                    </li>
                   </ul>
                 ) : null
               }
@@ -67,6 +71,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/organizers" element={<OrganizersPage />} />
+        <Route path="/sponsors" element={<SponsorsPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <footer>
