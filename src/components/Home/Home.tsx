@@ -208,7 +208,7 @@ export default function Home() {
           </li>
           <li>
             <button onClick={() => setPerson(people[7])}>
-              <img src={people[6].src} />
+              <img src={people[7].src} />
             </button>
           </li>
         </ul>
