@@ -46,10 +46,7 @@ export default function Home() {
       bio: (
         <>
           <p>
-            Anyah Lewis is a graduating senior from Central Michigan University. Majoring in Sociology with a concentration in Youth Studies, and minor in Family Studies; Anyah's involvements include, but are not limited to President of Zeta Phi Beta Sorority, Incorporated, Sigma Kappa Chapter; Ronald E. McNair Scholars Program with published research; and is a student mentor for the Mentor Collective program.
-          </p>
-          <p>
-            Anyah has a passion for community enrichment and is always looking for opportunities to give back. With an affinity toward youth development, Anyah endeavors to live a life of advocacy specifically for minority students. Lewis seeks to find innovative ways to implement resources and tools for young adolescents who've experienced trauma to heal and progress through life.
+            Anyah Lewis is a graduating senior from Central Michigan University majoring in sociology with a concentration in youth studies and minoring in family studies. Anyah's involvements include, but are not limited to, President of Zeta Phi Beta Sorority, Incorporated, Sigma Kappa Chapter, Ronald E. McNair Scholars Program with published research, and student mentoring for the Mentor Collective program. Anyah has a passion for community enrichment and is always looking for opportunities to give back. With an affinity toward youth development, Anyah endeavors to live a life of advocacy specifically for minority students. Lewis seeks to find innovative ways to implement resources and tools for young adolescents who've experienced trauma to heal and progress through life.
           </p>
         </>
       )
@@ -61,13 +58,13 @@ export default function Home() {
       bio: (
         <>
           <p>
-            Jonathan Glenn is the Director of Diversity & Inclusion/Deputy Title IX Coordinator at Alma College. Prior to joining Alma College, Glenn worked as the Associate Athletic Director with CMU Athletics. In this position he worked with leadership development, student conduct, Title IX, care team reporting, DEI director, and sports administrator for Women's Basketball, Women's Lacrosse, and Wrestling. Glenn also serves as the CMU Football’s team Chaplain.
+            Dr. Jonathan Glenn is the Director of Diversity & Inclusion/Deputy Title IX Coordinator at Alma College. Prior to joining Alma College, Dr. Glenn worked as the Associate Athletic Director with CMU Athletics. In this position he worked with leadership development, student conduct, Title IX, care team reporting, DEI director, and sports administrator for Women's Basketball, Women's Lacrosse, and Wrestling. Glenn also serves as CMU Football's team Chaplain.
           </p>
           <p>
-            Glenn also worked as an Assistant Director for the Leadership Institute at CMU after working as an Assistant Director in the Multicultural Academic Student Services office. Over the last seven years at Central Michigan University, Glenn has provided trainings on leadership, mentorship, multiculturalism, diversity, equity, and inclusion for several on and off campus organizations. Jonathan has presented for: St. Louis Public Schools, Gratiot County Public Schools, Omega Psi Phi, Florida Gulf Coast University, University of Nevada (Reno), Mid-American Conference, Resurrection Life Church, CMU Athletics, Aludyne Manufacturer, and several local leadership conferences.
+            Dr. Glenn also worked as an Assistant Director for the Leadership Institute at CMU after working as an Assistant Director in the Multicultural Academic Student Services office. Over the last seven years at Central Michigan University, Dr. Glenn has provided trainings on leadership, mentorship, multiculturalism, diversity, equity, and inclusion for several on and off campus organizations. He has presented for: St. Louis Public Schools, Gratiot County Public Schools, Omega Psi Phi, Florida Gulf Coast University, University of Nevada (Reno), Mid-American Conference, Resurrection Life Church, CMU Athletics, Aludyne Manufacturer, and several local leadership conferences.
           </p>
           <p>
-            As of April 3, 2023, Mr. Glenn transitioned to Dr. Glenn after successfully defending his doctoral dissertation from CMU. Dr. Glenn officially graduates with his Doctor of Education on May 5, 2023... his 3rd degree from CMU.
+            As of April 3, 2023, Mr. Glenn transitioned to Dr. Glenn after successfully defending his doctoral dissertation from CMU. Dr. Glenn officially graduates with his Doctor of Education on May 5, 2023... his third degree from CMU.
           </p>
         </>
       )
@@ -78,7 +75,7 @@ export default function Home() {
       src: jada,
       bio: (
         <p>
-          Jada Thrash is currently a junior at CMU as an Outdoor and Environmental Recreation and Education Major with Minors in Leadership and Communications. She is also a Leader Advancement Scholar passionate about using her voice for positive change in her community and inspiring others to do the same. Growing up in the suburbs of Washington, DC, Atlanta, and Philadelphia before moving to Kalamazoo a decade ago, she found her voice as part of over 40 plays, musicals, TV appearances, movies, speaking competitions, and public speeches. At CMU, she is a member of the Alpha Gamma Delta sorority, a social media coordinator for the Leadership Institute, a campus ambassador, a Collegiate Panhellenic Council Greek Week Representative, and a facilitator for various Leadership conferences and events around campus.
+          Jada Thrash is currently a junior at CMU with outdoor and environmental recreation and education majors and minors in leadership and communications. She is also a Leader Advancement Scholar passionate about using her voice for positive change in her community and inspiring others to do the same. Growing up in the suburbs of Washington, D.C., Atlanta, and Philadelphia before moving to Kalamazoo a decade ago, she found her voice taking part in over 40 plays, musicals, TV appearances, movies, speaking competitions, and public speeches. At CMU, she is a member of Alpha Gamma Delta sorority, a social media coordinator for the Leadership Institute, a campus ambassador, a Collegiate Panhellenic Council Greek Week Representative, and a facilitator for various Leadership conferences and events around campus.
         </p>
       )
     },
@@ -97,17 +94,9 @@ export default function Home() {
       title: "Student",
       src: joseph,
       bio: (
-        <>
-          <p>
-            Joseph Marah is the President and found of the Joseph Marah Arnold Foundation, a nonprofit in Sierra Leone, West Africa. He is currently a student at Central Michigan University pursuing degrees in Economics and Political Science with minors in Entrepreneurship and Public Administration.
-          </p>
-          <p>
-            Joseph is actively involved in student leadership on campus, serving as the Student Government representative for the International Student Organization and Vice President of the Northwest Community Council. Mr. Marah enjoys cultural exchange and was previously a Kennedy-Lugar Youth Exchange Student.
-          </p>
-          <p>
-            During his exchange year, Mr. Marah was involved in leadership and interfaith conferences in Istanbul, Turkey and Baltimore, Maryland. These conferences greatly widened his passions for cultural exchange and leadership.
-          </p>
-        </>
+        <p>
+          Marah is the President and founder of the Joseph Marah Arnold Foundation, a nonprofit in Sierra Leone, West Africa. He is currently a student at Central Michigan University pursuing degrees in economics and political science with minors in entrepreneurship and public administration. Marah is actively involved in student leadership on campus, serving as the student government representative for the International Student Organization and Vice President of the Northwest Community Council. Marah enjoys cultural exchange and was previously a Kennedy-Lugar Youth Exchange Student. During his exchange year, Marah was involved in leadership and interfaith conferences in Istanbul, Turkey and Baltimore, Maryland. These conferences greatly widened his passions for cultural exchange and leadership.
+        </p>
       )
     },
     {
@@ -130,13 +119,10 @@ export default function Home() {
             Dr. Shawna Patterson-Stephens serves as Vice President and Chief Diversity Officer at Central Michigan University where she offers leadership within the Office for Institutional Diversity, Equity, and Inclusion.
           </p>
           <p>
-            She earned her Ph.D. from Florida State University while studying higher education, earned her Master's in Student Affairs Administration from Michigan State University, and graduated from CMU with her Bachelor's while majoring in Sociology. She returns to CMU after most recently serving as the Associate Vice Chancellor of Student Affairs and the Director of the Office of Inclusion and Intercultural Relations at the University of Illinois at Urbana-Champaign.
+            She earned her Ph.D. from Florida State University while studying higher education, earned her Master's in student affairs administration from Michigan State University, and graduated from CMU with her Bachelor's while majoring in sociology. She returns to CMU after most recently serving as the Associate Vice Chancellor of Student Affairs and the Director of the Office of Inclusion and Intercultural Relations at the University of Illinois at Urbana-Champaign.
           </p>
           <p>
-            Dr. Patterson-Stephens dedicated her career to studying and creating more equitable systems for people from all avenues of life. She works toward creating an environment, both on campus and in the surrounding community, with the aim of ensuring everyone achieves their true potential. Shawna is an active member of Alpha Kappa Alpha Sorority, Incorporated, the Links, Incorporated, the NAACP, and the National Council for Negro Women, & Jack & Jill of America.
-          </p>
-          <p>
-            In her spare time, Shawna makes space to practice yoga, paint, sew, crochet, and enhance her photography skills. She's an avid traveler and hopes to visit several continents in the near future. Dr. Patterson-Stephens is also a podcast co-host and is currently writing a fictional novel.
+            Dr. Patterson-Stephens dedicated her career to studying and creating more equitable systems for people from all avenues of life. She works toward creating an environment, both on campus and in the surrounding community, with the aim of ensuring everyone achieves their true potential. Shawna is an active member of Alpha Kappa Alpha Sorority, Incorporated, the Links, Incorporated, the NAACP, and the National Council for Negro Women, and Jack & Jill of America.
           </p>
         </>
       )
