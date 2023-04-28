@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 import Profile from "../Profile/Profile";
-import anyah from "../../people/Anyah.jpg";
-import glenn from "../../people/Glenn.jpg";
-import jada from "../../people/Jada.jpg";
-import jessica from "../../people/Jessica.jpg";
-import joseph from "../../people/Joseph.jpg";
-import tiffany from "../../people/Tiffany.jpg";
-import shawna from "../../people/Shawna.jpeg";
+import anyah from "../../people/Anyah.png";
+import glenn from "../../people/Glenn.png";
+import jada from "../../people/Jada.png";
+import jessica from "../../people/Jessica.png";
+import joseph from "../../people/Joseph.png";
+import tiffany from "../../people/Tiffany.png";
+import nikita from "../../people/Nikita.png";
+import shawna from "../../people/Shawna.png";
 
 export interface Person {name: string; title: string; bio: React.ReactElement; src: string;}
 
@@ -136,6 +137,26 @@ export default function Home() {
           </p>
           <p>
             In her spare time, Shawna makes space to practice yoga, paint, sew, crochet, and enhance her photography skills. She's an avid traveler and hopes to visit several continents in the near future. Dr. Patterson-Stephens is also a podcast co-host and is currently writing a fictional novel.
+          </p>
+        </>
+      )
+    },
+    {
+      name: "Nikita Murray",
+      title: "Director of Diversity Education",
+      src: nikita,
+      bio: (
+        <>
+          <p>
+            Dr. Nikita Murry provides oversight for institution-wide diversity education initiatives at CMU, serving in the position since 2020. Through her role, Dr. Murry engages with faculty, staff, students, and alumni using scholarship and best practices for DEI to help ensure all individuals who engage with CMU experience authentic belonging and inclusion.</p>
+          <p>
+            Work in the equity and inclusion space has been a core function of every position she has held, especially her work connecting wellness and social justice. Her previous work as a college educator, licensed professional counselor, and journalist gives her unique perspectives on tuning in to and elevating marginalized voices. Dr. Murry is a CMU alumna passionate about working with disenfranchised people to help them develop the tools and skills to achieve their highest potential.
+          </p>
+          <p>
+            She earned her Ph.D. from Western Michigan University and a Master of Arts degree from CMU in professional counseling and school counseling, as well as a graduate certificate in international administration. Her undergraduate degree is in journalism from Michigan State University.
+          </p>
+          <p>
+            Dr. Murry serves the community as the president and founder of The Go BACK Project, a nonprofit that seeks to help children, adolescents, and their families position themselves for a more hopeful future following an experience with physical or sexual trauma.
           </p>
         </>
       )
