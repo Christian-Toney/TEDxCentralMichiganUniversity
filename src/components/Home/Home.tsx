@@ -192,7 +192,7 @@ export default function Home() {
           </li>
           <li>
             <button onClick={() => setPerson(people[1])}>
-              <img src={people[1].src} style={{objectPosition: "0px -34px"}} />
+              <img src={people[1].src} />
             </button>
           </li>
           <li>
@@ -202,21 +202,26 @@ export default function Home() {
           </li>
           <li>
             <button onClick={() => setPerson(people[3])}>
-              <img src={people[3].src} style={{objectPosition: "-14px"}} />
+              <img src={people[3].src} />
             </button>
           </li>
           <li>
             <button onClick={() => setPerson(people[4])}>
-              <img src={people[4].src} style={{objectPosition: "-44px"}} />
+              <img src={people[4].src} />
             </button>
           </li>
           <li>
             <button onClick={() => setPerson(people[5])}>
-              <img src={people[5].src} style={{objectPosition: "-51px"}} />
+              <img src={people[5].src} />
             </button>
           </li>
           <li>
             <button onClick={() => setPerson(people[6])}>
+              <img src={people[6].src} />
+            </button>
+          </li>
+          <li>
+            <button onClick={() => setPerson(people[7])}>
               <img src={people[6].src} />
             </button>
           </li>
