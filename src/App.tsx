@@ -6,6 +6,7 @@ import OrganizersPage from "./components/OrganizersPage/OrganizersPage";
 import "./global.css";
 import logo from "./logo.png";
 import SponsorsPage from "./components/SponsorsPage/SponsorsPage";
+import AgendaPage from "./components/AgendaPage/AgendaPage";
 
 export default function App() {
 
@@ -55,6 +56,9 @@ export default function App() {
                       <Link to="/about">About TED</Link>
                     </li>
                     <li>
+                      <Link to="/agenda">Agenda</Link>
+                    </li>
+                    <li>
                       <Link to="/organizers">Organizers</Link>
                     </li>
                     <li>
@@ -72,6 +76,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/organizers" element={<OrganizersPage />} />
         <Route path="/sponsors" element={<SponsorsPage />} />
+        <Route path="/agenda" element={<AgendaPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <footer>
@@ -84,6 +89,9 @@ export default function App() {
               </li>
               <li>
                 <Link to="/about">About TED</Link>
+              </li>
+              <li>
+                <Link to="/agenda">Agenda</Link>
               </li>
               <li>
                 <Link to="/organizers">Organizers</Link>
