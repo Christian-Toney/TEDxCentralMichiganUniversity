@@ -13,6 +13,35 @@ export default function SponsorsPage() {
 
   return (
     <main id={styles.main}>
+      <h1>Partners</h1>
+      <ul>
+        <li>
+          <section>
+            <img src={leadership} />
+            <h1>Dan Gaken - Leadership Institute</h1>
+          </section>
+          <p>Opened in 1997, the Sarah R. Opperman Leadership Institute is the nations' premier undergraduate leadership program.  The Leadership Institute serves as the coordinating body for CMU's vast student leadership development offerings.  The Institute strives to build leadership programs that are innovative, inclusive, and intentional.  The LI offers both curricular and co-curricular leadership opportunities for all students, including Leadership Safari and the dynamic Leader Advancement Scholar cohort.</p>
+        </li>
+        <li>
+          <section>
+            <img src={entrepreneurship} />
+            <h1>John Gustinic</h1>
+          </section>
+          <p>John Gustincic, JD, is a faculty member in the CMU Entrepreneurship Department, and serves as the Entrepreneur-in-Residence for the Isabella Bank Institute for Entrepreneurship (IBIE) at CMU.</p>
+          <p>The IBIE's goals are to teach practical skills, inspire innovative thinking, and connect students with mentors and other resources. We accomplish this through activities such as workshops, the New Venture Challenge, the Make-a-Pitch event, where students from all disciplines interact with experienced alumni, faculty, entrepreneurs, investors, and other business and political leaders to become better prepared to put their stamp on the world!</p>
+        </li>
+      </ul>
+      <ul className={styles.noNames}>
+        <li>
+          <img src={sga} />
+        </li>
+        <li>
+          <img src={cse} />
+        </li>
+        <li>
+          <img src={ehs} />
+        </li>
+      </ul>
       <h1>Sponsors</h1>
       <ul>
         <li>
@@ -24,40 +53,24 @@ export default function SponsorsPage() {
         </li>
         <li>
           <section>
-            <img src={entrepreneurship} />
-            <h1>John Gustinic</h1>
-          </section>
-          <p>John Gustincic, JD, is a faculty member in the CMU Entrepreneurship Department, and serves as the Entrepreneur-in-Residence for the Isabella Bank Institute for Entrepreneurship (IBIE) at CMU.</p>
-          <p>The IBIE's goals are to teach practical skills, inspire innovative thinking, and connect students with mentors and other resources. We accomplish this through activities such as workshops, the New Venture Challenge, the Make-a-Pitch event, where students from all disciplines interact with experienced alumni, faculty, entrepreneurs, investors, and other business and political leaders to become better prepared to put their stamp on the world!</p>
-        </li>
-        <li>
-          <section>
-            <img src={leadership} />
-            <h1>Dan Gaken - Leadership Institute</h1>
-          </section>
-          <p>Opened in 1997, the Sarah R. Opperman Leadership Institute is the nations' premier undergraduate leadership program.  The Leadership Institute serves as the coordinating body for CMU's vast student leadership development offerings.  The Institute strives to build leadership programs that are innovative, inclusive, and intentional.  The LI offers both curricular and co-curricular leadership opportunities for all students, including Leadership Safari and the dynamic Leader Advancement Scholar cohort.</p>
-        </li>
-        <li>
-          <section>
             <img src={bookstore} />
             <h1>CMU Bookstore</h1>
           </section>
           <p>Check us out at www.cmubookstore.com</p>
         </li>
       </ul>
-      <ul id={styles.noNames}>
+      <ul className={styles.noNames}>
         <li>
           <img src={einstein} />
         </li>
-        <li>
-          <img src={sga} />
-        </li>
-        <li>
-          <img src={cse} />
-        </li>
-        <li>
-          <img src={ehs} />
-        </li>
+      </ul>
+      <h1>Special Thanks</h1>
+      <ul style={{justifyContent: "center"}}>
+        <li>Julie Messing</li>
+        <li>Misha Neil</li>
+        <li>Andrew Starner</li>
+        <li>Dan Barger</li>
+        <li>Bob Davies</li>
       </ul>
     </main>
   );

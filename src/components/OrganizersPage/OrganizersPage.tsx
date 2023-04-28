@@ -34,12 +34,6 @@ export default function Organizers() {
           <Organizer name="Rhiannon Grodnik" title="Marketing Staff" imgSrc={rhiannon} offsetY={-25} />
         </ul>
       </section>
-      <section>
-        <h1>Special Thanks</h1>
-        <ul>
-          <li style={{width: "auto"}}>Central Michigan University Student Government Association • Central Michigan University University Events</li>
-        </ul>
-      </section>
     </main>
   );
 
