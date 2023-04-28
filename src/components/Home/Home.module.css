@@ -48,7 +48,7 @@
 #speakers li {
   width: calc(100% - 25px);
   height: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 940 / 788;
   font-size: 0;
   line-height: 0;
 }

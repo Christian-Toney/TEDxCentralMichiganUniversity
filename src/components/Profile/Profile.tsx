@@ -15,7 +15,6 @@ export default function Profile({person, onClose}: {person: Person, onClose: () 
           </button>
         </section>
         <section id={styles.details}>
-          <img src={person.src} />
           <section>
             <h1>{person.name}</h1>
             <h2>{person.title}</h2>
