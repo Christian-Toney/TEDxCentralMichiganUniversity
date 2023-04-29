@@ -129,7 +129,7 @@ export default function Home() {
       )
     },
     {
-      name: "Nikita Murray",
+      name: "Nikita Murry",
       title: "Director of Diversity Education",
       src: nikita,
       bio: (
