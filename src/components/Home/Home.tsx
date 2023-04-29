@@ -14,7 +14,7 @@ export interface Person {name: string; title: string; bio: React.ReactElement; s
 
 export default function Home() {
 
-  const goalDate = new Date(1682789400000);
+  const [goalDate] = useState(new Date(1682789400000));
   const [currentDate, setCurrentDate] = useState<Date>(new Date());
   useEffect(() => {
 
@@ -28,7 +28,8 @@ export default function Home() {
 
   }
 
-  let timeDifference = (goalDate.getTime() - currentDate.getTime()) / 1000;
+  const finalTimeDistance = (goalDate.getTime() - currentDate.getTime()) / 1000;
+  let timeDifference = finalTimeDistance;
   const dayDifference = Math.floor(timeDifference / 86400);
   timeDifference -= dayDifference * 86400;
   const hourDifference = Math.floor(timeDifference / 3600) % 24;
@@ -161,8 +162,14 @@ export default function Home() {
         <section>
           <p>We're out of tickets this semester, but don't fret: you can watch the stream when we're live!</p>
           <section id={styles.player}>
-            {addZeroIfNecessary(dayDifference)}:{addZeroIfNecessary(hourDifference)}:{addZeroIfNecessary(minuteDifference)}:{addZeroIfNecessary(secondDifference)}
-            <p>until it happens!</p>
+            {
+              finalTimeDistance <= 0 ? <button onClick={() => location.href = "https://chipcast.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=be7ea427-ab23-450d-ab90-afee00e0d589"}>Watch now!</button> : (
+                <>  
+                  {addZeroIfNecessary(dayDifference)}:{addZeroIfNecessary(hourDifference)}:{addZeroIfNecessary(minuteDifference)}:{addZeroIfNecessary(secondDifference)}
+                  <p>until it happens!</p>
+                </>
+              )
+            }
           </section>
         </section>
       </section>
