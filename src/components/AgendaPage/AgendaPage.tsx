@@ -1,28 +1,59 @@
 import React from "react";
+import styles from "./AgendaPage.module.css";
 
 export default function AgendaPage() {
 
   return (
-    <main>
-      <h1>Agenda</h1>
+    <main id={styles.agenda}>
+      <h1 style={{textAlign: "center"}}>Agenda</h1>
       <ol>
-        <li>Registration</li>
-        <li>French Auditorium doors open</li>
-        <li>TED intro video begins</li>
-        <li>Host introduction</li>
-        <li>Speaker: Tiffany Jurge</li>
-        <li>Speaker: Anyah Lewis</li>
-        <li>Speaker: Jessica Hetzel</li>
-        <li>Speaker: Dr. Pattersons-Stephens</li>
-        <li>Intermission</li>
-        <li>Audience re-enters French Auditorium</li>
-        <li>Speaker: Jada Thrash</li>
-        <li>Speaker: Dr. Nikita Murray</li>
-        <li>Speaker: Joseph Marah</li>
-        <li>Host thank yous</li>
-        <li>Speaker: Dr. Jonathan Glenn</li>
+        <li>
+          <b>Registration</b>
+          <span>TEDxCentral Michigan University Staff</span>
+        </li>
+        <li>
+          <b>French Auditorium doors open</b>
+        </li>
+        <li>
+          <b>TEDx introduction</b>
+        </li>
+        <li>
+          <b>Host introduction</b>
+          <span>Tyler Thompson</span>
+        </li>
+        <li>
+          <b>Speakers</b>
+          <ol>
+            <li>Tiffany Jurge</li>
+            <li>Anyah Lewis</li>
+            <li>Jessica Hetzel</li>
+            <li>Dr. Pattersons-Stephens</li>
+          </ol>
+        </li>
+        <li>
+          <b>Intermission</b>
+        </li>
+        <li>
+          <b>French Auditorium reopens</b>
+        </li>
+        <li>
+          <span><b>Speakers</b> (continued)</span>
+          <ol>
+            <li>Jada Thrash</li>
+            <li>Dr. Nikita Murry</li>
+            <li>Joseph Marah</li>
+          </ol>
+        </li>
+        <li>
+          <b>Acknowledgments</b>
+          <span>Tyler Thompson</span>
+        </li>
+        <li>
+          <b>Closing speaker</b>
+          <span>Dr. Jonathan Glenn</span>
+        </li>
       </ol>
     </main>
-  )
+  );
 
 }

@@ -1,0 +1,37 @@
+#agenda {
+  padding: 20px;
+}
+
+#agenda > ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#agenda > ol > li {
+  min-width: 285px;
+}
+
+#agenda ol {
+  padding: 0;
+}
+
+#agenda ol > li {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 729px) {
+
+  #agenda > ol > li {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 655px;
+  }
+
+  #agenda > ol > li li, #agenda > ol > li span {
+    text-align: right;
+  }
+
+}
